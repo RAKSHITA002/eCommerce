@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(29, 0, 42);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 3vw;
+    color : rgb(237, 240, 235);
+    box-shadow : 0 5px 15px rgba(0, 0 , 0, 0.2);
+}
+
+.nav-part2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.nav-part2 p a:hover,
+.nav-part2 p a.active,
+.logo,
+.cart
+{
+    color : rgb(242, 188, 242);
+    text-decoration: none;
+}
+
+.electronicsProducts{
+    padding : 2vw;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.electronicsProducts img{
+    height : 8vw;
+    width :  8vw;
+    margin-top : 2vw;
+    margin-left : 3vw;
+}
+
+.electronicsProducts .title{
+    font-size : 1vw;
+    padding : 2vw;
+}
+
+.electronicsProducts .price{
+   font-size : 1vw;
+   padding-left : 2vw;
+}
+.electronicsProducts .description{
+   display : none;
+    
+ }
+ .electronicsProducts .category{
+    font-size : 1vw;
+    padding : 2vw;
+    padding-top : 0;
+ }
+
+.ElectronicProduct{
+    height : 30vw;
+    width : 20vw;
+    border : 1px solid black;
+    margin-top : 2vw;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
+    background-color: #f9f9f9;
+}
+

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+   /*  position : fixed; */
+    background-color: rgb(29, 0, 42);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 3vw;
+    color : rgb(237, 240, 235);
+    box-shadow : 0 5px 15px rgba(0, 0 , 0, 0.06);
+    
+}
+
+.nav-part2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.nav-part2 p a:hover,
+.nav-part2 p a.active,
+.logo,
+.cart
+{
+    color : rgb(242, 188, 242);
+    text-decoration: none;
+}
+
+
+.products{
+    display : grid;
+    grid-template-columns : repeat(auto-fit, minmax(20rem,1fr));
+    gap : 4vw;
+    margin-left : 4vw;
+    margin-right : 4vw;
+    padding-top : 4vw;
+    margin-bottom : 6vw;
+}
+
+.product{
+    border : 1px solid black;
+    padding :0 5vw 2vw;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
+    background-color: #f9f9f9;
+
+}
+
+.product img{
+    height : 8vw;
+    width :  7vw;
+    margin-top : 2vw;
+    margin-left : 3vw;
+}
+
+.product .title{
+    font-size : 1vw;
+    padding : 2vw 0;
+}
+
+.price-container{
+    display : flex;
+    align-items : center;
+    justify-content : space-between;
+}
+
+.price-container .price{
+   font-size : 1vw;
+}
+
+.add-to-cart{
+    background : rgb(77, 0, 77);
+    color : white;
+    border-radius : 0.6vw;
+    border : none;
+    padding : 0.6vw;
+    font-weight: 800;
+    font-size : 0.7vw;
+}
+
+.footer {
+    background-color: rgb(29, 0, 42);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2vw;
+    padding-left: 13vw;
+    padding-right: 5vw;
+    padding-bottom: 2vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.about {
+    display: flex;
+    gap: 8vw;
+    font-size: 1vw;
+    color: rgb(250, 229, 250);
+}
