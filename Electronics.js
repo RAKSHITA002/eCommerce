@@ -18,7 +18,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                 </div>
                   `;
+                   
         }
+        
+        
     };
     fetchElectronicsCategory("https://fakestoreapi.com/products/category/electronics");
 });

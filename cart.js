@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
         const cartItemsContainer = document.getElementById('cart-items');
         const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
 
-        // Clear the existing content
+    
         cartItemsContainer.innerHTML = '';
 
         let totalPrice = 0;
 
-        // Render each item in the cart
+       
         cartItems.forEach(item => {
             const cartItemElement = document.createElement('div');
             cartItemElement.classList.add('cart-item');
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
             quantityContainer.appendChild(minusButton);
 
             const quantityElement = document.createElement('span');
-            quantityElement.textContent = item.quantity || 1; // Default to 1 if quantity is not defined
+            quantityElement.textContent = item.quantity || 1; 
             quantityContainer.appendChild(quantityElement);
 
             const plusButton = createButton('+', () => updateQuantity(item, 1));

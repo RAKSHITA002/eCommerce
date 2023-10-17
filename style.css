@@ -84,6 +84,7 @@ nav {
     display : flex;
     align-items : center;
     justify-content : space-between;
+    color : rgb(244, 117, 117);
 }
 
 .price-container .price{
@@ -98,6 +99,15 @@ nav {
     padding : 0.6vw;
     font-weight: 800;
     font-size : 0.7vw;
+    cursor: pointer;
+}
+.view-more{
+    border-radius : 0.6vw;
+    border : none;
+    padding : 0.1vw;
+    font-weight: 800;
+    font-size : 0.7vw;
+    cursor: pointer;
 }
 
 .footer {
